@@ -1,3 +1,5 @@
+## Questions about hypothetical situation where we have an application being worked on by a team of about 6 people. The application is in active development and will be released soon.
+
 ### Language of choice
 
 I've picked Python as an example here, I've only ever coded a Hello World example in Python.
@@ -17,3 +19,11 @@ It's a hard pick between pytest and using the inbuilt python module, unittest. H
 3. Building
 
 Since Python is an interpreted language and not a compiled language (it does not have to be compiled manually to source code), Python for this assumingly small project without a bunch of extensions, does not need a build tool.
+
+#### What alternatives are there to set up the CI besides Jenkins and GitHub Actions?
+
+What I've found so far is another service called CircleCI which is integrated into GitHub. It also has great documentation and even tutorials on how to migrate from other CI services like Jenkins or GitLab.
+
+#### Would this setup be better in a self-hosted or a cloud-based environment? Why? What information would you need to make that decision?
+
+Gathering from the information that the app is developed by a team of six, in other words, not a large scale app, I'd say cloud-based would be the best option. It's easier to set-up, as in, it doesn't require a lot of time to configurate the whole CI/CD setup as opposed to a self-hosted version.
