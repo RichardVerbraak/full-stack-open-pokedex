@@ -5,10 +5,10 @@ on:
     branches:
       - master
 
-jobs: 
+jobs:
   hello_world_job:
     runs-on: ubuntu-18.04
     steps:
       - name: Say hello
-      run: | 
-        echo "Hello World"
+        run: |
+          echo "Hello World"
