@@ -7,3 +7,12 @@ describe('Pokedex', function () {
 		)
 	})
 })
+
+describe('Pokedex', function () {
+	it('navigates to the Ivysaur page', function () {
+		cy.visit('http://localhost:5000')
+
+		cy.contains('ivysaur').click()
+		cy.contains('chlorophyll')
+	})
+})
