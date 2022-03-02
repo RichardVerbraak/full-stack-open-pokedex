@@ -34,3 +34,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: fullstack-p11-pokedex
           heroku_email: richardverbraak@gmail.com
+          healthcheck: http://fullstack-p11-pokedex.herokuapp.com/health
